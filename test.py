@@ -15,10 +15,10 @@ for i in range(0,len(tests)):
     avg_density = 0
     density_list = []
     avg_time = 0
-    avg_bins = 8
+    avg_bins = 0
     bins_list = []
     for j in range(0,10):
-        res = DPAA_WF.main(tests[i]) #change the algorithm here
+        res = DPAA_FF.main(tests[i]) #change the algorithm here
         avg_density+= res[0]
         density_list.append(res[0])
         avg_time+= res[1]
